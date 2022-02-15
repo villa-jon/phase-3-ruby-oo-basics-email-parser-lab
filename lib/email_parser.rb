@@ -9,7 +9,8 @@ class EmailAddressParser
 		@emails = emails 
 	end 
 
-	# The reason I wrote emails.split is because we are splitting each 
+	# The reason I wrote emails.split is because we are splitting/separating each each unformatted unique
+	# email. Hence the .uniq. 
 
 	def parse 
 		emails.split(/, | /).uniq
